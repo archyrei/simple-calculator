@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root {
+    --black-pearl:#1e272e;
+    --london: #808e9b;
+    --elusive: #d2dae2;
+    --red-orange: #ff3f34;
+    --lynx-white: #f5f6fa;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Oswald";
+    font-size: 22px;
+    color: var(--black-pearl);
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+.button {
+    flex-basis: 25%;
+    text-align: center;
+    padding: 40px;
+    border: 2px solid var(--black-pearl);
+}
+
+.button:hover {
+    color: white;
+    background-color: var(--red-orange);
+}
+
+.double {
+    flex-basis: 50%;
+}
+
+.display {
+    color:  var(--black-pearl);
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--elusive);
+    border: 2px solid var(--black-pearl);
+}
+
+.negative,
+.equals,
+.operator {
+    background-color: var(--london);
+}
+
+.card {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;        
+    }
+
+    .history {
+        width: 100%;
+    }
+}
+
+.history {
+    overflow: scroll;
+    margin: 30px auto 0;
+    width: 80%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid var(--elusive);
+}
+
+th, td {
+    text-align: center;
+    padding: 14px;
+}
+
+th {
+    background-color: var(--elusive);
+    color: var(--black-pearl);
+}
+
+tr:nth-child(even) {
+    background-color: var(--lynx-white);
+}
